@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MemoryMinder | Case Study</title>
+  <meta name="description" content="MemoryMinder – an inclusive mobile app for early-stage Alzheimer’s: reminders, symptom tracking, and caregiver support. Case study by Xiao Yu." />
+  <style>
+    :root{
+      --grad: linear-gradient(120deg,#7f7fd5,#86a8e7,#91eae4);
+      --bg: #f7f8fb; --text:#333; --muted:#666; --card:#fff; --link:#007bff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Helvetica Neue", Arial, sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--link);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Nav */
+    .nav{display:flex;gap:18px;align-items:center;justify-content:center;padding:14px 16px;background:#fff;border-bottom:1px solid #eaeaea;position:sticky;top:0;z-index:10}
+    .nav .brand{margin-right:auto;font-weight:800;padding-left:8px;color:#333}
+
+    header{background:var(--grad);color:#fff;text-align:center;padding:64px 16px}
+    header h1{margin:0 0 10px;font-size:40px}
+    header p{margin:0;opacity:.95}
+
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 64px}
+
+    h2{margin:32px 0 12px}
+    h3{margin:0 0 8px}
+    .muted{color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:900px){.grid{grid-template-columns:1fr 1fr}}
+
+    .card{background:var(--card);border:1px solid #eee;border-radius:14px;padding:18px}
+
+    .heroimg{width:100%;height:300px;background:#eaf0ff;border:1px dashed #cbd5ff;border-radius:16px;display:flex;align-items:center;justify-content:center;color:#789}
+    .caption{font-size:13px;color:#888;margin:8px 0 0}
+
+    .kv{display:flex;gap:12px;flex-wrap:wrap}
+    .kv div{background:#fff;border:1px solid #eee;border-radius:10px;padding:8px 10px}
+
+    .tags{display:flex;gap:6px;flex-wrap:wrap}
+    .tag{font-size:12px;background:#eef2ff;border:1px solid #e0e6ff;border-radius:999px;padding:2px 8px;color:#476ef0}
+
+    .btn{display:inline-block;padding:10px 16px;background:#007bff;color:#fff;border-radius:10px;font-weight:600}
+    .btn.alt{background:#fff;color:#007bff;border:1px solid #cfe0ff}
+
+    footer{color:#999;text-align:center;padding:36px 0}
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <div class="nav">
+    <a class="brand" href="index.html">Xiao Yu</a>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="resume.html">Resume</a>
+  </div>
+
+  <header>
+    <h1>MemoryMinder</h1>
+    <p>An inclusive mobile app for early-stage Alzheimer’s — memory aid, routines, and caregiver support.</p>
+  </header>
+
+  <div class="wrap">
+    <!-- Cover / collage placeholder -->
+    <div class="heroimg">Place product cover / screens collage here</div>
+    <p class="caption">Tip: export a hero image from Figma (PNG/JPG) and replace this placeholder.</p>
+
+    <!-- Overview -->
+    <h2>Overview</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Problem</h3>
+        <p>Early-stage Alzheimer’s gradually impairs memory and day-to-day functioning. Existing apps rarely focus on dementia workflows and often prioritize education over practical support for daily tasks.</p>
+        <div class="kv">
+          <div><strong>Domain:</strong> Dementia care</div>
+          <div><strong>Type:</strong> Mobile app (iOS/Android)</div>
+          <div><strong>Focus:</strong> Everyday assistance & safety</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Outcome</h3>
+        <p><em>MemoryMinder</em> simplifies routines and supports independence through reminders, medication tracking, and symptom logging with trends and resources. Usability testing achieved an average <strong>SUS 87.5 (Grade A)</strong> across participants.</p>
+        <div class="tags">
+          <span class="tag">Reminders</span>
+          <span class="tag">Medication</span>
+          <span class="tag">Symptom Tracking</span>
+          <span class="tag">Accessible UI</span>
+          <span class="tag">Care Support</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Role & Team -->
+    <h2>Role & Team</h2>
+    <div class="card">
+      <p><strong>Team:</strong> Xiao Yu, Shruthika Sridharan, Prachi Modi</p>
+      <p><strong>Course:</strong> INF 385T Inclusive Design • <strong>Timeline:</strong> 8–10 weeks (Fall 2023)</p>
+      <p><strong>My contributions:</strong> user flows & IA, low/mid‑fi prototyping, concept testing, SUS evaluation, and synthesis.</p>
+    </div>
+
+    <!-- Process -->
+    <h2>Process</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Empathy</h3>
+        <p>Literature review, mind mapping, and competitive scan to understand Alzheimer’s challenges and existing solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Define</h3>
+        <p>Affinity mapping → user needs → HMWs → persona for early‑stage Alzheimer’s. MVP prioritized everyday tasks, accessible content, and tracking.</p>
+      </div>
+      <div class="card">
+        <h3>Ideate</h3>
+        <p>User flows, information architecture, sketches, low‑fi prototypes, and concept testing with caregivers.</p>
+      </div>
+      <div class="card">
+        <h3>Prototype</h3>
+        <p>Mid‑fi prototypes with clear hierarchy, readable typography (≥14pt), and consistent components.</p>
+      </div>
+      <div class="card">
+        <h3>Test</h3>
+        <p>Task‑based usability tests (add to‑do, add symptom, add medication) and SUS survey with four participants of mixed tech proficiency.</p>
+      </div>
+    </div>
+
+    <!-- Key flows -->
+    <h2>Key Flows</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1) Add a Plan / Medication</h3>
+        <p>From Home, add a plan or medication with time, frequency, and reminder options. Calendar shows tasks by day; completion triggers contextual confirmation.</p>
+      </div>
+      <div class="card">
+        <h3>2) Track a Symptom</h3>
+        <p>Select a symptom category, log details (time, intensity, response), then review color‑coded trends and related resources.</p>
+      </div>
+    </div>
+
+    <!-- IA -->
+    <h2>Information Architecture</h2>
+    <div class="card">
+      <p><strong>Top‑level:</strong> Scheduler (Tasks & Medication), Track (Symptoms), Feed (Resources), Account (Settings / Caregiver).</p>
+      <div class="heroimg">Place IA diagram image here</div>
+      <p class="caption">Replace with an exported IA diagram.</p>
+    </div>
+
+    <!-- Screens (placeholders) -->
+    <h2>Representative Screens</h2>
+    <div class="grid">
+      <div class="card"><strong>Dashboard</strong><div class="heroimg">Dashboard screen</div></div>
+      <div class="card"><strong>Calendar / To‑do</strong><div class="heroimg">Calendar view</div></div>
+      <div class="card"><strong>Add Medication</strong><div class="heroimg">Form screen</div></div>
+      <div class="card"><strong>Symptoms Graph</strong><div class="heroimg">Charts</div></div>
+    </div>
+
+    <!-- Usability -->
+    <h2>Usability Results</h2>
+    <div class="card">
+      <ul>
+        <li><strong>SUS average:</strong> 87.5 / 100 (Grade A – Highly Usable).</li>
+        <li>Users completed core tasks easily but wanted clearer medication onboarding and more legible graphs.</li>
+        <li>Redundant Home vs. To‑do surfaced; we kept Dashboard as the entry point and used Calendar for drill‑down.</li>
+      </ul>
+    </div>
+
+    <!-- Learnings / Next -->
+    <h2>What I Learned</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Prioritize MVP:</strong> focus scope to ship and learn faster.</li>
+        <li><strong>Accessibility by default:</strong> readable type, contrast, guidance, and reduced cognitive load are critical.</li>
+        <li><strong>Evidence‑informed design:</strong> when direct access to users is limited, systematic literature and competitive reviews help.</li>
+      </ul>
+    </div>
+
+    <h2>Next Steps</h2>
+    <div class="card">
+      <ul>
+        <li>Caregiver access (shared data entry & reminders).</li>
+        <li>Community features for safe peer support.</li>
+        <li>Location tracking for outdoor safety.</li>
+        <li>Hi‑fi design and validation with target users.</li>
+      </ul>
+      <div class="kv" style="margin-top:8px">
+        <a class="btn" href="projects.html">← Back to Projects</a>
+        <a class="btn alt" href="mailto:xiaoyu@utexas.edu">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>© 2025 Xiao Yu</footer>
+</body>
+</html>
